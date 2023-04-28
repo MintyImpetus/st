@@ -1933,10 +1933,6 @@ strhandle(void)
 				break;
 			p = strescseq.args[2];
 			/* FALLTHROUGH */
-		case 111: /* all colors reset */
-			xloadcols();
-			tfulldirt();
-			return;
 		case 104: /* color reset */
 			j = (narg > 1) ? atoi(strescseq.args[1]) : -1;
 
